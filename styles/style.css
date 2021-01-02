@@ -1,29 +1,14 @@
 * {
   margin: 0;
-  border: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: roboto;
+  font-family: 'heebo', sans-serif;
 }
 
-.container {
-  background-color: aquamarine;
-}
-
-footer {
-  margin-top: 100%;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-}
-
-.linkedin,
-.github,
-.instagram,
-.medium {
-  width: 30px;
+.landing {
+  min-height: 100vh;
+  background: url('../image/background.PNG');
 }
