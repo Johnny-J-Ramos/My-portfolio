@@ -73,6 +73,38 @@ nav {
   width: 90%;
 }
 
+.button {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-family: 'Heebo', sans-serif;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.button span:nth-child(2) {
+  color: #6c4ba5;
+  background: #fff;
+  
+}
+
 .intro {
   background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
   background-size: 300% 300%;
