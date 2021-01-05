@@ -102,9 +102,17 @@ nav {
 .button span:nth-child(2) {
   color: #6c4ba5;
   background: #fff;
-  
+  overflow: hidden;
+  z-index: 2;
+  transform: 0.5s;
+  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 53%);
 }
 
+.button span:nth-child(2):hover {
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+}
+.button span:nth-child(2):hover ~ span:nth-child(2) {
+}
 .intro {
   background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
   background-size: 300% 300%;
