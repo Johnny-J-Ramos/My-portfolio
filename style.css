@@ -45,7 +45,7 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-family: 'Lobster', cursive;
+  font-family: open sans-serif;
 }
 
 #logo {
@@ -56,6 +56,7 @@ nav {
 }
 
 .descretion {
+  position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0 auto;
@@ -74,10 +75,12 @@ nav {
 }
 
 .button {
-  position: relative;
+  position: sticky;
   display: inline-block;
   width: 160px;
   height: 50px;
+
+  margin-top: 50px;
 
   letter-spacing: 2px;
   font-size: 18px;
@@ -93,10 +96,13 @@ nav {
   height: 100%;
   width: 100%;
   color: #fff;
+  background: #6c4ba5;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
 }
 
 .button span:nth-child(2) {
@@ -104,15 +110,17 @@ nav {
   background: #fff;
   overflow: hidden;
   z-index: 2;
-  transform: 0.5s;
+  transform: 0.1s;
   clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 53%);
 }
 
 .button span:nth-child(2):hover {
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
 }
-.button span:nth-child(2):hover ~ span:nth-child(2) {
+.button span:nth-child(1):hover ~ span:nth-child(2) {
+  clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 50%);
 }
+
 .intro {
   background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
   background-size: 300% 300%;
