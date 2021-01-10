@@ -96,7 +96,7 @@ nav {
   height: 100%;
   width: 100%;
   color: #fff;
-  background: #6c4ba5;
+  background: #181322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +106,7 @@ nav {
 }
 
 .button span:nth-child(2) {
-  color: #6c4ba5;
+  color: #0e071b;
   background: #fff;
   overflow: hidden;
   z-index: 2;
